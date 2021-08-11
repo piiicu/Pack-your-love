@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Raleway:ital,wght@1,300&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+  /* position: relative; */
+  overflow-x: hidden;
+}
+body {
+  --header-color: rgb(5, 5, 65);
+  --text-font: cursive;
+  --article-font: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+}
+.first-page {
+  background-image: url(bg-firstpage1.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 1000;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin-top: 0.5em;
+}
+nav ul a {
+  list-style: none;
+  margin: 1em;
+  text-decoration: none;
+  color: var(--header-color);
+  font-size: 1.3rem;
+  font-family: var(--text-font);
+}
+#title {
+  position: absolute;
+  top: 0;
+  left: 80px;
+  padding: 5px 10px;
+  font-family: Style Script;
+  font-size: 1.5rem;
+  color: var(--header-color);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container h1 {
+  font-family: Style Script;
+  font-size: 4.3em;
+  opacity: 0.9;
+  margin-bottom: 2.3em;
+  word-spacing: 10px;
+  opacity: 0.8;
+}
+.button {
+  border-radius: 30px;
+  width: 150px;
+  margin: 0 auto;
+  padding: 8px;
+  text-align: center;
+  font-family: var(--text-font);
+  color: var(--header-color);
+  background-color: powderblue;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1em;
+}
+.header {
+  background-image: url(background5.jpg);
+  background-size: cover;
+  background-position-y: -100px;
+  height: 300px;
+  margin-top: 90px;
+}
+.header h1 {
+  font-family: var(--text-font);
+  font-size: 2.5em;
+  padding: 130px;
+}
+.article {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.article h2 {
+  font-family: Raleway;
+  font-size: 2em;
+  padding-top: 50px;
+}
+.article h2::after {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 3px;
+  background: darkred;
+  opacity: 0.8;
+  margin-top: 8px;
+  position: relative;
+  left: 49%;
+}
+.article p {
+  font-family: --article-font;
+  font-size: 1.5em;
+  text-align: justify;
+  padding: 50px 80px;
+  opacity: 0.7;
+}
+.services-section {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.imag {
+  padding-left: 50px;
+}
+.imag img {
+  width: 300px;
+  border-radius: 20px;
+}
+.imag h3 {
+  padding-top: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.imag p {
+  width: 300px;
+  text-align: left;
+  margin-bottom: 20px;
+  font-family: var(--article-font);
+  opacity: 0.8;
+}
+.imag h3:after {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 3px;
+  background: darkred;
+  opacity: 0.8;
+  margin-top: 8px;
+  position: relative;
+  left: 40%;
+}
+.imag-profil {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 100vw;
+}
+.imag-profil img {
+  width: 300px;
+  position: relative;
+  top: 0;
+  left: 39%;
+  margin-bottom: 20px;
+}
+.name-position {
+  margin-top: 10px;
+}
+.name-position h3 {
+  font-size: 1.3em;
+}
+.name-position h4 {
+  opacity: 0.8;
+  padding-top: 5px;
+}
+.contact-page {
+  background-image: url(contact.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+.contact-info {
+  display: flex;
+  flex-flow: row wrap;
+}
+.bt-contact input {
+  display: block;
+  margin: 20px 30px 20px 80px;
+  width: 600px;
+  height: 40px;
+  opacity: 0.6;
+}
+.bt-contact textarea {
+  display: block;
+  margin: 20px 30px 20px 80px;
+  width: 600px;
+  height: 200px;
+  opacity: 0.6;
+}
+.bt-contact button {
+  display: block;
+  margin: 20px 0 20px 80px;
+  height: 45px;
+  width: 90px;
+  background: rgb(90, 87, 87);
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+.bt-info {
+  width: 400px;
+  height: 430px;
+  background: rgba(226, 139, 139, 0.582);
+  margin: 20px auto;
+}
+.bt-info p {
+  text-align: center;
+  font-size: 1.3em;
+  font-family: var(--article-font);
+  opacity: 0.7;
+}
+.bt-info p:nth-child(1) {
+  margin-top: 80px;
+}
+hr {
+  width: 300px;
+  margin: 10px 30px 50px 50px;
+}
